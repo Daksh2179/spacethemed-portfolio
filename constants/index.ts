@@ -269,7 +269,7 @@ export const PROJECTS = [
     title: "GRIME-Graphical Image Manipulation & Enhancement",
     description:
       '',
-    image: "/projects/project-2.png",
+    image: "/projects/grime.png",
     link: "https://github.com/Daksh2179/IME",
   },
   {
