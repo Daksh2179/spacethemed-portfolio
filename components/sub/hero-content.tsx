@@ -45,7 +45,7 @@ export const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I'm a Software Engineer with experience in web development, from frontend to backend. 
+          I am a Software Engineer with experience in web development, from frontend to backend. 
           I have a keen interest in fintech and game development, particularly in building intelligent 
           financial solutions and creating immersive gaming experiences. Check out my projects and skills 
           on this space-themed portfolio website, designed and built by me!
