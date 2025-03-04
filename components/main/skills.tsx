@@ -10,6 +10,13 @@ import {
 } from "@/constants";
 
 export const Skills = () => {
+  // Define how many skills to show per row, decreasing for pyramid effect
+  const row1Count = SKILL_DATA.length;            // First row (all skills)
+  const row2Count = FRONTEND_SKILL.length;        // Second row (all frontend)
+  const row3Count = 8;                            // Take 8 backend skills
+  const row4Count = 4;                            // Take 4 fullstack skills
+  const row5Count = 2;                            // Take 2 other skills
+
   return (
     <section
       id="skills"
@@ -18,7 +25,8 @@ export const Skills = () => {
     >
       <SkillText />
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      {/* First row - All skills (widest) */}
+      <div className="flex flex-row justify-center flex-wrap mt-4 gap-5 items-center">
         {SKILL_DATA.map((skill, i) => (
           <SkillDataProvider
             key={skill.skill_name}
@@ -31,7 +39,9 @@ export const Skills = () => {
         ))}
       </div>
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      {/* Second row - Frontend skills (slightly narrower) */}
+      <div className="flex flex-row justify-center flex-wrap mt-4 gap-5 items-center" 
+           style={{ maxWidth: "90%" }}>
         {FRONTEND_SKILL.map((skill, i) => (
           <SkillDataProvider
             key={skill.skill_name}
@@ -43,8 +53,11 @@ export const Skills = () => {
           />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {BACKEND_SKILL.map((skill, i) => (
+
+      {/* Third row - Backend skills (limited to 8, even narrower) */}
+      <div className="flex flex-row justify-center flex-wrap mt-4 gap-5 items-center"
+           style={{ maxWidth: "75%" }}>
+        {BACKEND_SKILL.slice(0, row3Count).map((skill, i) => (
           <SkillDataProvider
             key={skill.skill_name}
             src={skill.image}
@@ -55,8 +68,11 @@ export const Skills = () => {
           />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {FULLSTACK_SKILL.map((skill, i) => (
+
+      {/* Fourth row - Fullstack skills (limited to 4, narrower) */}
+      <div className="flex flex-row justify-center flex-wrap mt-4 gap-5 items-center"
+           style={{ maxWidth: "50%" }}>
+        {FULLSTACK_SKILL.slice(0, row4Count).map((skill, i) => (
           <SkillDataProvider
             key={skill.skill_name}
             src={skill.image}
@@ -67,8 +83,11 @@ export const Skills = () => {
           />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
-        {OTHER_SKILL.map((skill, i) => (
+
+      {/* Fifth row - Other skills (limited to 2, narrowest) */}
+      <div className="flex flex-row justify-center flex-wrap mt-4 gap-5 items-center"
+           style={{ maxWidth: "25%" }}>
+        {OTHER_SKILL.slice(0, row5Count).map((skill, i) => (
           <SkillDataProvider
             key={skill.skill_name}
             src={skill.image}

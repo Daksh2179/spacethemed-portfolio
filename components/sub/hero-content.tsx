@@ -24,7 +24,7 @@ export const HeroContent = () => {
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-            Computer Science Portfolio
+            Software Engineer Portfolio
           </h1>
         </motion.div>
 
@@ -45,16 +45,12 @@ export const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full Stack Software Engineer with experience in Website,
-          Mobile, and Software development. Check out my projects and skills.
+          I'm a Software Engineer with experience in web development, from frontend to backend. 
+          I have a keen interest in fintech and game development, particularly in building intelligent 
+          financial solutions and creating immersive gaming experiences. Check out my projects and skills 
+          on this space-themed portfolio website, designed and built by me!
         </motion.p>
 
-        <motion.a
-          variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-        >
-          Learn more
-        </motion.a>
       </div>
 
       <motion.div

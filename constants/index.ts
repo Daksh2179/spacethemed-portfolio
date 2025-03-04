@@ -92,17 +92,12 @@ export const SOCIALS = [
   {
     name: "Instagram",
     icon: RxInstagramLogo,
-    link: "https://instagram.com",
+    link: "https://www.instagram.com/daksh_27_/",
   },
   {
-    name: "Facebook",
-    icon: FaFacebook,
-    link: "https://facebook.com",
-  },
-  {
-    name: "Twitter",
-    icon: RxTwitterLogo,
-    link: "https://twitter.com",
+    name: "Linkedin",
+    icon: RxLinkedinLogo,
+    link: "https://www.linkedin.com/in/daksh-patel-517813214/",
   },
 ] as const;
 
@@ -220,6 +215,52 @@ export const BACKEND_SKILL = [
   },
 ] as const;
 
+export const OTHER_SKILL = [
+  {
+    skill_name: "Go",
+    image: "go.png",
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "R",
+    image: "R.png",
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "Python",
+    image: "Python.png",
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "Java",
+    image: "java.png",
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "Android",
+    image: "Android.png",
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "API",
+    image: "api.png",
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "ChatGPT",
+    image: "ChatGPT.png",
+    width: 60,
+    height: 60,
+  },
+  
+] as const;
+
 export const FULLSTACK_SKILL = [
   {
     skill_name: "React Native",
@@ -248,27 +289,20 @@ export const FULLSTACK_SKILL = [
   },
 ] as const;
 
-export const OTHER_SKILL = [
-  {
-    skill_name: "Go",
-    image: "go.png",
-    width: 60,
-    height: 60,
-  },
-] as const;
+
 
 export const PROJECTS = [
   {
     title: "Kanbas(Learning Management System)",
     description:
-      '',
+      'Designed and developed Kanbas, a full-stack Learning Management System inspired by Canvas. Built with React.js, Node.js, and MongoDB, it features course management, assignments, grading, and user authentication. Focused on a seamless UX and scalability, empowering educators and students with an intuitive interface.',
     image: "/projects/kanbas.png",
     link: "https://674b7350eb085c0008c9c31a--cerulean-puffpuff-de8b3b.netlify.app/#/Kanbas/Account/Signin",
   },
   {
     title: "GRIME-Graphical Image Manipulation & Enhancement",
     description:
-      '',
+      'Developed GRIME, a powerful Java Swing-based image processing tool for applying filters, transformations, and enhancements. Supports real-time preview, batch processing, and an intuitive UI for seamless editing. Engineered for performance and flexibility, making advanced image manipulation accessible.',
     image: "/projects/grime.png",
     link: "https://github.com/Daksh2179/IME",
   },
@@ -330,5 +364,5 @@ export const NAV_LINKS = [
 ] as const;
 
 export const LINKS = {
-  sourceCode: "https://github.com/sanidhyy/space-portfolio",
+  sourceCode: "https://github.com/Daksh2179/spacethemed-portfolio",
 };
